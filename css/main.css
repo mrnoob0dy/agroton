@@ -1,0 +1,225 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("./../fonts/NunitoSans-Variable.woff2") format("woff2-variations");
+  src: url("./../fonts/NunitoSans-Variable.woff2") format("woff2") tech("variations");
+  font-weight: 300 700;
+}
+@font-face {
+  font-family: "WorkSans-Light";
+  src: url("./../fonts/WorkSans-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "WorkSans-Regular";
+  src: url("./../fonts/WorkSans-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "WorkSans-Medium";
+  src: url("./../fonts/WorkSans-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "WorkSans-SemiBold";
+  src: url("./../fonts/WorkSans-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+:root {
+  --font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  background-color: #fdfdf0;
+  font-family: var(--font-family);
+}
+
+.container {
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-big {
+  max-width: 1850px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding: 30px 0;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu__link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #0e0d0d;
+  transition: transform 0.3s ease-in;
+}
+.menu__link:hover {
+  transform: translateY(-2px);
+}
+
+.header__contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  padding: 0 40px;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+  border-radius: 50px;
+  background-color: #0e0d0d;
+  transition: scale 0.3s ease-in;
+}
+.header__contacts:hover {
+  scale: 1.04;
+}
+
+.about {
+  padding-bottom: 180px;
+}
+
+.about__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background: url("./../images/about-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 748px;
+}
+
+.about__title {
+  padding-top: 60px;
+  font-family: "WorkSans-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 250px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fdfdf0;
+}
+
+.about__text p {
+  font-family: "WorkSans-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #fdfdf0;
+}/*# sourceMappingURL=main.css.map */
