@@ -629,4 +629,151 @@ body {
 .partners__box-text span {
   font-weight: 700;
   color: #f2a531;
+}
+
+.blog {
+  padding-bottom: 80px;
+}
+
+.blog__wrapper {
+  border-radius: 20px;
+  background-color: #f4f4e7;
+}
+
+.blog__inner {
+  padding: 100px 0;
+}
+
+.blog__items {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 44px;
+}
+
+.blog__title {
+  font-family: "WorkSans-Medium", sans-serif;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0e0d0d;
+}
+
+.blog__item {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.blog__item-img {
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blog__item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.blog__item-subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  color: #f2a531;
+}
+
+.blog__item-title {
+  position: relative;
+  font-family: "WorkSans-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  color: #101828;
+}
+.blog__item-title::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 24px;
+  aspect-ratio: 1;
+  background-image: url("./../images/blog/blog-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.blog__item-desc {
+  max-width: 545px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #667085;
+}
+
+.blog__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.blog__list-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.blog__list-img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blog__list-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog__list-subtitle {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  color: #f2a531;
+}
+
+.blog__list-title {
+  position: relative;
+  max-width: 452px;
+  width: 100%;
+  padding-right: 160px;
+  margin-bottom: 8px;
+  font-family: "WorkSans-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  color: #101828;
+}
+.blog__list-title::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 24px;
+  aspect-ratio: 1;
+  background-image: url("./../images/blog/blog-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.blog__list-desc {
+  max-width: 452px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #667085;
 }/*# sourceMappingURL=main.css.map */
