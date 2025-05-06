@@ -1,5 +1,9 @@
 .about {
   padding-bottom: 180px;
+
+  @media (max-width: 767px) {
+    padding-bottom: 80px;
+  }
 }
 
 .about__top {
@@ -13,6 +17,10 @@
   background-position: center;
   background-repeat: no-repeat;
   min-height: 748px;
+
+  @media (max-width: 767px) {
+    min-height: 600px;
+  }
 }
 
 .about__title {
@@ -23,6 +31,19 @@
   line-height: 1;
   text-transform: uppercase;
   color: #fdfdf0;
+
+  @media (max-width: 1280px) {
+    font-size: 140px;
+    padding-top: 140px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 100px;
+  }
+
+  @media (max-width: 520px) {
+    font-size: 60px;
+  }
 }
 
 .about__text {
@@ -32,7 +53,20 @@
     font-size: 32px;
     line-height: 120%;
     text-transform: uppercase;
+    text-align: center;
     color: #fdfdf0;
+
+    @media (max-width: 1280px) {
+      font-size: 26px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 520px) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -41,6 +75,20 @@
   margin-bottom: 90px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1280px) {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media (max-width: 1024px) {
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 50px;
+  }
 }
 
 .about__achievement {
@@ -50,8 +98,11 @@
   align-items: center;
   gap: 25px;
   border-radius: 20px;
-  backdrop-filter: blur(20px);
   background-color: #f4f4e7;
+
+  @media (max-width: 520px) {
+    flex-direction: column;
+  }
 }
 
 .about__achievement-imgbox {
@@ -78,6 +129,11 @@
   font-weight: 500;
   font-size: 16px;
   color: #000;
+
+  @media (max-width: 520px) {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
 }
 .about__achievement-description {
   font-weight: 300;
@@ -92,6 +148,10 @@
     font-weight: 600;
     color: #f2a531;
   }
+
+  @media (max-width: 520px) {
+    font-size: 12px;
+  }
 }
 
 .about__stats {
@@ -102,6 +162,18 @@
   padding: 30px 17px;
   border-radius: 20px;
   background-color: #f4f4e7;
+
+  @media (max-width: 1280px) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 630px) {
+    justify-content: center;
+  }
 }
 
 .about__stats-item {
@@ -137,6 +209,19 @@
     font-family: "WorkSans-SemiBold", sans-serif;
     font-weight: 600;
   }
+
+  @media (max-width: 1024px) {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 520px) {
+    font-size: 20px;
+  }
 }
 
 .about__progress-box {
@@ -144,6 +229,11 @@
   justify-content: space-between;
   align-items: center;
   gap: 40px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .about__progress-img {
@@ -169,6 +259,14 @@
   b {
     font-weight: 700;
   }
+
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 520px) {
+    font-size: 16px;
+  }
 }
 
 .about__progress-table {
@@ -189,6 +287,11 @@
     padding-top: 10px;
     border-top: 1px solid rgba(14, 13, 13, 0.23);
   }
+
+  @media (max-width: 520px) {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 
 .about__progress-title {
@@ -200,10 +303,18 @@
     font-weight: 600;
     color: #f2a531;
   }
+
+  @media (max-width: 630px) {
+    font-size: 14px;
+  }
 }
 
 .about__progress-info {
   font-weight: 400;
   font-size: 16px;
   color: rgba(14, 13, 13, 0.71);
+
+  @media (max-width: 630px) {
+    font-size: 12px;
+  }
 }
