@@ -776,4 +776,64 @@ body {
   font-size: 16px;
   line-height: 150%;
   color: #667085;
+}
+
+.footer {
+  padding: 100px 0;
+  background-color: #0e0d0d;
+}
+
+.footer__top {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 219px;
+       column-gap: 219px;
+}
+
+.footer__element-title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer__list-link {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  transition: color 0.3s ease-in;
+}
+.footer__list-link:hover {
+  color: #f2a531;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid #fff;
+}
+
+.footer__bottom-item {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+.footer__bottom-item a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  transition: color 0.3s ease-in;
+}
+.footer__bottom-item a:hover {
+  color: #f2a531;
 }/*# sourceMappingURL=main.css.map */
